@@ -1,0 +1,60 @@
+@import '../../styles/variables';
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  .price {
+    color: $light-grey;
+    font-size: 16px;
+  }
+  .right {
+    text-align: right;
+  }
+}
+.total-row {
+  margin-top: -10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.total-price {
+  text-align: right;
+  .label {
+    font-size: 12px;
+  }
+  .the-price {
+    color: $red;
+    font-size: 16px;
+  }
+  .underline {
+    width: 50px;
+    height: 2px;
+    background: $dark-grey;
+    margin-left: auto;
+    margin-top: 8px;
+  }
+}
+.discount-row {
+  padding-left: 54px;
+  label {
+    color: #39BA3F;
+    display: block;
+  }
+  .ui-control {
+    height: 28px;
+    max-width: 240px;
+  }
+}
+.checkbox-row {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &.checked {
+    .price {
+      color: $red;
+    }
+  }
+  &:first-child {
+    pointer-events: none;
+  }
+}

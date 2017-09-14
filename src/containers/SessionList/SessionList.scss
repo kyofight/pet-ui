@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+
+.session-list {
+  border-top: 1px solid $sharp-blue-border;
+  border-bottom: 1px solid $sharp-blue-border;
+  background: #fff;
+}
+
+.session-row{
+  display: flex;
+  padding: 20px 10px 20px 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $border;
+  }
+
+  .checkmark-col {
+    flex-basis: 40px;
+  }
+
+  .section-info {
+    flex: 1;
+    margin-left: 20px;
+  }
+
+  .availability {
+    flex-basis: 48px;
+    margin-top: 2px;
+    margin-left: auto;
+  }
+}

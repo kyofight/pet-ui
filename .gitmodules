@@ -1,0 +1,3 @@
+[submodule "comingsoon"]
+	path = comingsoon
+	url = http://gitsrv.emcchk.com:3000/TonyKung/coming-soon-page.git

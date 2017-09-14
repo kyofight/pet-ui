@@ -1,0 +1,94 @@
+$orange-text: #ea4c2f;
+$header-font: 'Poppins', 'Lato', sans-serif;
+$page-font: 'Lato', sans-serif;
+$dark-grey: #39312F;
+$light-grey: #ADADAD;
+$link: #569dd6;
+$border: #e6e7e7;
+$orange-border: rgba(234,76,47,0.3);
+$z-header-menu: 2000;
+$error: #fb0019;
+$brand: #ff6338;
+
+
+$menu-break: 1000px;
+$logo-size: 200px;
+
+.header-menu {
+
+  //background: #fff;
+  //border-bottom: 1px solid $orange-border;
+  //position: fixed;
+  //top: 0;
+  //left: 0;
+  //right: 0;
+  //z-index: $z-header-menu;
+  padding-top: 20px;
+
+  .con {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .logo {
+    padding: 10px;
+    flex-shrink: 0;
+
+    img {
+      width: $logo-size;
+      float: left;
+    }
+  }
+
+  .hamburger {
+    display: none;
+    @media (max-width: $menu-break) {
+      display: block;
+      padding: 14px 18px;
+      color: $orange-text;
+      font-size: 26px;
+      cursor: pointer;
+      position: relative;
+      top: -1px;
+    }
+  }
+
+  .nav-wrap {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+
+    .item {
+      font-family: $header-font;
+
+      font-weight: 400;
+
+      text-transform: uppercase;
+      padding: 1em 1em;
+      cursor: pointer;
+      white-space: nowrap;
+      text-decoration: none;
+      user-select: none;
+      a {
+        color: #569dd6;
+        font-size: 14px;
+        text-decoration: none;
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+      .route--active {
+        font-weight: bold;
+        border-bottom: 1px solid #569dd6;
+      }
+    }
+  }
+}
+

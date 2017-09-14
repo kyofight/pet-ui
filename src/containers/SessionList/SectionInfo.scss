@@ -1,0 +1,18 @@
+@import '../../styles/variables';
+
+.section-info {
+  color: $dark-text;
+  font-size: 12px;
+  .date {
+    padding-right: 10px;
+  }
+  .venue {
+    color: $light-text;
+  }
+
+  &.large {
+    .date-time {
+      font-size: 14px;
+    }
+  }
+}
