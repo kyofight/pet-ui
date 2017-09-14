@@ -1,3 +1,26 @@
+# Introduction from Kyo
+Unlike https://github.com/kyofight/MEN.js that I design from scratch, 
+this UI Test just uses existing design from React Redux Starter Kit (https://github.com/davezuko/react-redux-starter-kit) to implement. 
+There are some basic UIs integration with API:
+1. get customer list
+2. create customer
+3. get pet list
+4. create pet
+
+# Todo
+use socketcluster (https://socketcluster.io) to do the 
+1. Extension #1 - Real-Time
+2. Extension #3 - Scale
+
+# Boostrap
+1. boot the api server https://github.com/kyofight/MEN.js
+2. cd to root directory of this project and run command "yarn && yarn start"
+
+
+===== The below readme content are from the React Redux Starter Kit =====
+
+
+
 # React Redux Starter Kit
 
 [![Join the chat at https://gitter.im/davezuko/react-redux-starter-kit](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/davezuko/react-redux-starter-kit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
